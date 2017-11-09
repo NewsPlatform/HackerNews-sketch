@@ -28,14 +28,14 @@ export default context => {
     <Document>
       <Page name="NEWS">
         <Artboard name="NEWS" style={getStyle(1, 1)}>
-          <StoryScreen data={data_news} />
+          <StoryScreen story={"NEWS"} data={data_news} />
         </Artboard>
         <Artboard name="Web Page" style={getStyle(2, 1)}>
           <PageScreen item={data_news[0]} />
         </Artboard>
 
         <Artboard name="BEST" style={getStyle(1, 2)}>
-          <StoryScreen data={data_best} />
+          <StoryScreen story={"BEST"} data={data_best} />
         </Artboard>
 
         <Artboard name="Comment" style={getStyle(2, 2)}>

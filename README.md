@@ -19,3 +19,5 @@ Now run the 'Sketch' application, open the New document, and run `npm start`.
 $ npm start
 ```
 
+> This project uses Noto Sans fonts (NotoSans-Bold, NotoSans-Light, NotoSans-Regular), so you need to install fonts in advance.
+> https://www.google.co.kr/get/noto/#sans-lgc

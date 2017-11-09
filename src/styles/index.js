@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-sketchapp";
-
-export const getFont = () => "NotoSans-Regular";
+import fonts from "./fonts";
 
 export const StoryScreen = StyleSheet.create({
   container: {
@@ -31,12 +30,12 @@ export const PageScreen = StyleSheet.create({
 export const StoryRow = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 15,
-    paddingVertical: 10 //16,
+    paddingHorizontal: 15,
+    paddingVertical: 10
   },
   title: {
     fontSize: 22,
-    fontFamily: getFont()
+    fontFamily: fonts.Bold
   },
   descWrap: {
     flexDirection: "row",
@@ -47,11 +46,13 @@ export const StoryRow = StyleSheet.create({
   },
   by: {
     fontSize: 15,
-    fontFamily: getFont()
+    fontFamily: fonts.Light,
+    color: "#616161"
   },
   comment: {
     fontSize: 16,
-    fontFamily: getFont()
+    fontFamily: fonts.Regular,
+    color: "#616161"
   }
 });
 
@@ -72,17 +73,17 @@ export const CommentRow = StyleSheet.create({
   },
   by: {
     fontSize: 15,
-    fontFamily: getFont()
+    fontFamily: fonts.Regular
   },
   comment: {
     fontSize: 16,
-    fontFamily: getFont()
+    fontFamily: fonts.Regular
   }
 });
 
 export const Header = StyleSheet.create({
   container: {
-    height: 40,
+    height: 60,
     flexDirection: "row",
     justifyContent: "flex-start",
     alignItems: "center",
@@ -91,9 +92,9 @@ export const Header = StyleSheet.create({
   text: {
     paddingLeft: 8,
     color: "#000000",
-    fontFamily: getFont(),
-    fontSize: 20,
-    top: 3
+    fontFamily: fonts.Regular,
+    fontSize: 22,
+    top: 2
   }
 });
 

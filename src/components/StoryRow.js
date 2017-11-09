@@ -23,9 +23,7 @@ export default props => {
 
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.title}>{item.title}</Text>
-      </View>
+      <Text style={styles.title}>{item.title}</Text>
       <View style={styles.descWrap}>
         {_writer}
         {_comment}

@@ -4,6 +4,7 @@ import { loadLocalStory } from "../utils/fetchData";
 import { StoryScreen as styles } from "../styles";
 import StoryRow from "../components/StoryRow";
 import Header from "../components/Header";
+import TabBar from "../components/TabBar";
 
 export default props => {
   const stories = props.data || loadLocalStory(props.story);
@@ -16,6 +17,7 @@ export default props => {
   return (
     <View style={styles.container}>
       <Header />
+      <TabBar story={props.story} />
       {list}
     </View>
   );

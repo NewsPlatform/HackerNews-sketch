@@ -48,7 +48,7 @@ function retrieveData(path, item) {
             });
           }
         } catch (e) {
-          console.error(e.message);
+          console.error(e, rawData);
         }
       });
     })
