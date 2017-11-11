@@ -22,7 +22,10 @@ const getStyle = (x = 1, y = 1) => {
 
 export default context => {
   const data_news = loadLocalStory("NEWS");
+  const data_top = loadLocalStory("TOP");
   const data_best = loadLocalStory("BEST");
+  const data_ask = loadLocalStory("ASK");
+  const data_show = loadLocalStory("SHOW");
 
   render(
     <Document>
@@ -30,12 +33,25 @@ export default context => {
         <Artboard name="NEWS" style={getStyle(1, 1)}>
           <StoryScreen story={"NEWS"} data={data_news} />
         </Artboard>
-        <Artboard name="Web Page" style={getStyle(2, 1)}>
-          <PageScreen item={data_news[0]} />
+
+        <Artboard name="TOP" style={getStyle(1, 2)}>
+          <StoryScreen story={"TOP"} data={data_top} />
         </Artboard>
 
-        <Artboard name="BEST" style={getStyle(1, 2)}>
+        <Artboard name="BEST" style={getStyle(1, 3)}>
           <StoryScreen story={"BEST"} data={data_best} />
+        </Artboard>
+
+        <Artboard name="ASK" style={getStyle(1, 4)}>
+          <StoryScreen story={"ASK"} data={data_ask} />
+        </Artboard>
+
+        <Artboard name="SHOW" style={getStyle(1, 5)}>
+          <StoryScreen story={"SHOW"} data={data_show} />
+        </Artboard>
+
+        <Artboard name="Web Page" style={getStyle(2, 1)}>
+          <PageScreen item={data_news[0]} />
         </Artboard>
 
         <Artboard name="Comment" style={getStyle(2, 2)}>
