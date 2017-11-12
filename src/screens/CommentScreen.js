@@ -3,7 +3,7 @@ import { View, Text } from "react-sketchapp";
 import { loadLocalItem } from "../utils/fetchData";
 import { CommentScreen as styles } from "../styles";
 import CommentRow from "../components/CommentRow";
-import Header from "../components/Header";
+import { Comment as Header } from "../components/Headers";
 
 export default props => {
   const item = props.data || loadLocalItem(props.item);

@@ -1,6 +1,19 @@
 import { StyleSheet } from "react-sketchapp";
 import fonts from "./fonts";
 
+export const SplashScreen = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#FFFFFF",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  text: {
+    fontSize: 22,
+    fontFamily: fonts.Bold
+  }
+});
+
 export const StoryScreen = StyleSheet.create({
   container: {
     backgroundColor: "#FFFFFF"

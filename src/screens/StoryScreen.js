@@ -2,9 +2,9 @@ import React from "react";
 import { View, Text } from "react-sketchapp";
 import { loadLocalStory } from "../utils/fetchData";
 import { StoryScreen as styles } from "../styles";
-import StoryRow from "../components/StoryRow";
-import Header from "../components/Header";
+import { Story as Header } from "../components/Headers";
 import TabBar from "../components/TabBar";
+import StoryRow from "../components/StoryRow";
 
 export default props => {
   const stories = props.data || loadLocalStory(props.story);

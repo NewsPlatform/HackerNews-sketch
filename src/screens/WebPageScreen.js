@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-sketchapp";
 import { loadLocalItem } from "../utils/fetchData";
 import { PageScreen as styles } from "../styles";
-import Header from "../components/Header";
+import { WebPage as Header } from "../components/Headers";
 
 export default props => {
   const item = props.data || loadLocalItem(props.item);
